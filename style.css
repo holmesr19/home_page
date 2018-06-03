@@ -1,0 +1,166 @@
+header {
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    z-index: 1;
+}
+
+body{
+    margin: 0px;
+}
+
+.info{
+    background-color:#280344;
+    text-align: center;
+    color: #F7F3E2;
+    padding: 10px;
+    width: 100%;
+}
+
+section#p1{
+    margin-top: 200px;
+}
+
+h1{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 300%;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+}
+
+h2{
+    background-color: #7112C1;
+    color: #F4EAFC;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+h2.listheading {
+    font-style: italic;
+  }
+  
+em.standout {
+    font: bold;
+    text-transform: uppercase;
+}
+
+#working {
+    color: #FF0000;
+}
+
+#key {
+    color: #1C8E03;
+}
+dd, dt {
+    line-height: 2;
+    text-align: center;
+}  
+
+a.link {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+aside{
+    color: #fefefe;
+    background-color: #162EDA;
+    letter-spacing: .3em;
+    word-spacing: .6em;
+    font-family: georgia, times, serif;
+    width: 200px;
+    float: right;
+    border: dashed 10px #090C6E;
+    margin-right: 0px;
+    padding: 5px 5px 10px 10px;
+    box-shadow: 5px 5px #777777;
+}
+
+blockquote{
+    text-align: right;
+}
+
+figure {
+    margin: 0px;
+    display: inline-block;
+    width: 30%;
+}
+
+figure#one{
+    /*display: inline-block;*/
+    float: left;
+    /*width: 30%;*/
+    width: 30%;
+}
+
+figure#two{
+    /*display: inline-block;*/
+    /*width: 30%;*/
+    width: 30%;
+}
+
+figure#three{
+    /*display: inline-block;*/
+    float: right;
+    /*width: 30%;*/
+    width: 30%;
+}
+
+img{
+    width: 100%;
+}
+
+figcaption{
+    margin-top: 15px;
+    font-style: italic;
+    font-size: 8pt;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+thead{
+    background-color: #07094E;
+    color: #ffffff;
+}
+
+th, td {
+    border-bottom: 2px solid #ddd;
+    padding: 20px;
+}
+
+label{
+    width: 200px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+div.form{
+    padding-bottom: 15px;
+}
+
+form{
+    width: 400px;
+    margin: 10px auto 10px auto
+}
+
+#submit{
+    float: right;
+}
+
+span#dropcap{
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+footer{
+    text-align: center;
+    text-shadow: 1px 1px;
+    top: 100%;
+    left: 0px;
+    margin: 0px;
+}
+  
+  
