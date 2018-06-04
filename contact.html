@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="style.css" type="text/css" rel="stylesheet">
+  <title>Personal Profile for Robert Holmes</title>
+</head>
+    <body>
+        <section>
+            <h2>Contact Me</h2>
+            <form action="mailto:holmesr19@mail.wlu.edu"
+                method="post">
+                <div class="form">
+                    <label for="contact">Name: </label>  
+                    <input type="text" name="contact" id="contact"
+                        size="15" maxlength="30">
+                </div>
+                <div class="form">
+                    <label for="email">Your Email: </label>  
+                    <input type="text" name="email" id="email"
+                        size="15" maxlength="30">
+                </div>
+                <div class="form">
+                <label for="purpose">Nature of the message:</label>
+                <select name="purpose">
+                    <option value="question" selected>Question</option>
+                    <option value="comment">Comment</option>
+                    <option value="request">Request</option>
+                    <option value="followup">Follow-up</option>
+                </select>
+                </div>
+                <div class="form">
+                <label for="message">Your Message:</label>
+            
+                <textarea name="message" id="message" cols="50" rows="15"
+                    placeholder="Please limit your message to approximately 1,000 characters"></textarea>
+                </div>
+                <div class="form">
+                    <input type="hidden" name="email_to" value="holmesr19@mail.wlu.edu" >
+                    <button name="submit" id="submit">submit</button>
+                </div>
+            </form>
+        </section>
+        <footer class="info"> &copy; 2017, Robert E. B. Holmes</footer>
+    </body>
+</html>
