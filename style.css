@@ -63,6 +63,13 @@ h2{
 h2.listheading {
     font-style: italic;
   }
+
+h3 {
+    background-color: #DFB0F4;
+    color: #F5F5DB;
+    padding: 10px;
+    border-radius: 10px;
+}
   
 em.standout {
     font: bold;
@@ -180,7 +187,6 @@ span#dropcap{
 
 footer{
     text-align: center;
-    text-shadow: 1px 1px;
     top: 100%;
     left: 0px;
     margin: 0px;
