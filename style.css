@@ -102,14 +102,13 @@ aside{
     font-family: georgia, times, serif;
     width: 200px;
     float: right;
-    border: dashed 10px #090C6E;
     margin-right: 0px;
     padding: 5px 5px 10px 10px;
     box-shadow: 5px 5px #777777;
 }
 
 blockquote{
-    text-align: right;
+    text-align: center;
 }
 
 figure {
