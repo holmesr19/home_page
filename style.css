@@ -10,7 +10,6 @@ header {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    color: #F7F3E2;
 }
 
 .navitem {
@@ -19,7 +18,6 @@ header {
 
 li a {
     display: block;
-    color: #d8d9de;
     text-align: center;
     padding: 10px 5px 10px 10px;
     text-decoration: none;
