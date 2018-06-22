@@ -77,7 +77,7 @@ h3 {
 }
 
 .gpa {
-    text-align: right;
+    float: right;
 }
 
 .time {
@@ -88,7 +88,7 @@ em.standout {
     font: bold;
     text-transform: uppercase;
 }
-
+/*
 #working {
     color: #FF0000;
 }
@@ -96,6 +96,7 @@ em.standout {
 #key {
     color: #1C8E03;
 }
+*/
 dd, dt {
     line-height: 2;
     text-align: center;
