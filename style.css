@@ -84,6 +84,13 @@ em.standout {
     font: bold;
     text-transform: uppercase;
 }
+
+#prof_pic {
+    float: right;
+    height: 20%;
+    height: 20%;
+}
+
 /*
 #working {
     color: #FF0000;
@@ -120,36 +127,36 @@ blockquote{
     text-align: center;
 }
 
-figure {
+/*figure {
     margin: 0px;
     display: inline-block;
     width: 30%;
 }
 
 figure#one{
-    /*display: inline-block;*/
+    display: inline-block;
     float: left;
-    /*width: 30%;*/
+    /*width: 30%;
     width: 30%;
 }
 
 figure#two{
     /*display: inline-block;*/
-    /*width: 30%;*/
+    /*width: 30%;
     width: 30%;
 }
 
 figure#three{
-    /*display: inline-block;*/
+    /*display: inline-block;
     float: right;
-    /*width: 30%;*/
+    /*width: 30%;
     width: 30%;
 }
 
 img{
     width: 100%;
 }
-
+*/
 figcaption{
     margin-top: 15px;
     font-style: italic;
