@@ -71,6 +71,10 @@ h3 {
     margin: 5px;
     border-radius: 2px;
 }
+
+p {
+    margin: 15px;
+}
   
 .place {
     text-align: center;
