@@ -23,10 +23,20 @@
                     Catullus Text Analysis
                 </h3>
                     <p>
-                        motivation
+                        I started to think about this project in my advanced Latin poetry class where we read Catullus
+                        and parts of Ovid's erotic poems and Metamorphoses. At the end of the class, we were assigned a 
+                        paper to write about any topic that we talked about in the class. I thought it would be 
+                        interesting to use the skills that I had learned in my computer science classes to produce a novel
+                        analysis of the material that we covered in class and so I began to research how I might go about
+                        such a project.
                     </p>
                     <p>
-                        background
+                        One thing that I didn't realize until probably too late is how intensive such a project would be for
+                        a student in my position at the time. The assignment was given to us six weeks before it was due at
+                        the end of the semester and it took approximately four weeks of resarch to realize that I was in way
+                        over my head, haivng never taken a single class that would help me carry out a text analysis. Thankfully,
+                        I was able to revisit the project in the summer of 2018 with more time to research the tools necesary 
+                        for the project.
                     </p>
                     <p>
                         hypothesis
@@ -75,16 +85,43 @@
                     <a id = "cs209">Java Freecell Game, CS 209</a>
                 </h3>
                     <p>
-                        wargame
+                        The Java Freecell game was a step-by-step project completed by myself and my four team mates, 
+                        Gillen Beck, Rebecca Melkerson, Liz Curtis, and Emily Boyes. We built the project in a step-wise
+                        fashion, starting by building a simple war game and and devloping it into a full-fledged, GUI game
+                        of Freecell solitaire. We made extensive use of the <a href = "">Solitaire Laboratory</a> to 
+                        add to our understanding of gameplay and decide how to organize the application.
+                    </p>
+                    <button onclick="showMore()">Show More</button>
+                    <div id="209_hidden">
+                    <p>
+                        The first step of our project was creating a game of war. This was a GUI as well; throughout the
+                        entire project we edited and added on to the same original code base. The GUI displayed the top 
+                        card on each players stack and judged which player won. There was a console in the center of the 
+                        pane to inform the players of the actions that the controller was manipulating the model with. If 
+                        the two cards had the same rank, they would be held until the next two cards were played and so on
+                        until one player wins a pairing, thereby claiming the whole pile of tied cards. At the end of a game, 
+                        or whenever a player hit the "New Game" button, the whole instance of the game would be discarded and
+                        a new deck object would be created to be dealt to each player.
                     </p>
                     <p>
-                        table mockup
+                        Over the next few weeks, we were tasked with transforming the game of war we had built into a complete
+                        game of Freecell. Using the MVC model, we broke it into three smaller projects: one developing the GUI 
+                        display, one developing the behind-the-scenes logic of the game, and one working on the controller that
+                        takes information from the GUI view to update the model and vice versa. When testing end cases, we ran 
+                        into a number of situations that made us look back at the rule book and then revise our model. One of 
+                        the toughest end cases was when you had played yourself into a hole, meaning you had no possible moves
+                        remaining and you hadn't won. At first, the game would let you play indefinitelyin this scenario so we 
+                        had to add methods to calculate the possible number of moves that could be made with the game in its 
+                        current state and notify the player if that move was 0, in which case the game was lost.
                     </p>
                     <p>
-                        functionality
-                    </p>
-                    <p>
-                        extra functionality
+                        I thought this functionality would be a nice thing to tell the user for each move, so I added a box at 
+                        the bottom left of the GUI that displays this number after every move. While I was at it I thought it 
+                        would also be of interest to the player to know in how many moves he or she solved the hand, so at the 
+                        bottom right I added a counter for the number of moves that have been completed. Upon revisiting this 
+                        project lately, I think it would be a worthwhile addition to also add a button that will suggest the 
+                        best possible move at the current time and also a screen that can be visited that tells what moves have
+                        been made.
                     </p>
                     <p>
                         swing
@@ -92,6 +129,7 @@
                     <p>
                         mvc
                     </p>
+                    </div>
                 <h3>
                     <a id = "bv">Planning and Community Development Internship</a>
                 </h3>
@@ -106,20 +144,197 @@
                         an atomic value with the correct account number.
                     </p>
                     <p>
-                        comp plan
+                        The first project I undertook with the City of Buena Vista was helping to revise their 5-year
+                        comprehensive plan. Specifically, I was looking at their demographic data and how it has 
+                        changed since the last publication. Using data from 2010 Census which was not available at
+                        the time of previous publication, I updated charts that showed the age, population size 
+                        and racial makeup of the city. Additionally, I updated maps showing population density,
+                        age, and racial makeup of the different sectors of the city. Finally, the analysis of
+                        the data had to be revised to match the new figures along with new estimates of where the
+                        aforementioned metrics will be in the future. We used the University of Virginia's Weldon
+                        Cooper Center's population estimates in these cases. <!--revisit this, sounds wrong-->
                     </p>
                     <p>
-                        crash database
+                        Another project I had the chance to work on is making a GIS that displays all the car 
+                        accidents that had occurred in the city, color coded by the season in which they occurred.
+                        The Planning Department wanted this map to see what effect the local college, Southern
+                        Virginia University, had on car wrecks in the city. The data came from the the Virginia
+                        Department of Transportation <!--link here-->. We wanted to see whether the number of 
+                        accidents increased in the fall when students moved in. The good news is that the 
+                        data from the Department of Highways had dates and GPS coordinates. Unfortunately, 
+                        the dates were not in a format recognized by Excel. This meant that I would have to 
+                        classify the 170 accidents manually, unless I found another way. This is exactly what I 
+                        did; using a few SQL statements I was able to code the accidents by season and then easily
+                        upload them to ArcGIS to display them in space and color code them. This showed that the 
+                        number of accidents actually decreased in the fall. Furthermore, the GIS showed that not 
+                        only were accidents relatively steady throughout the year but they are also roughly 
+                        proportional to the number of cars travelling on a road.<!--photo in this <p>-->
                     </p>
                     <p>
-                        reporting app
+                        A quick project that I was asked to put together was an app that allowed city employees
+                        to report code infractions such as inoperable vehicles in the yard or derelict structures
+                        on the property. I used Survey123 with ArcGIS Online to create the app in which the user 
+                        can report up to three infractions and optionally add pictures of the offenses.
                     </p>
                     <p>
-                        atomic values program
+                        My favorite project that I worked on was a Python program that transforms the multi-valued 
+                        attributes in the City's real estate database into atomic values. This project was used to
+                        write the data into a format that could be joined with the City's real estate GIS. The problem
+                        with the data was that although they had every parcel enumerated in the GIS, they did not have
+                        the account number of the parcel's owner attached to it. They did have the account numbers,
+                        along with every parcel that account owned, in an excel spreadsheet but it was in an anomalous
+                        format, as is seen below left. They needed the data in a standardized form with a single parcel 
+                        number linked to an account number so that it could be joined to the parcel numbers database that
+                        already existed on their GIS.
+                    </p>
+                    <table id = 'before'>
+                        <thead>
+                        <tr>
+                        <th scope="row">Map_number</th>
+                        <th scope="row">Account_number</th>
+                        <th scope="row">Legal1</th>
+                        <th scope="row">Legal3</th>
+                        </tr>
+                        </thead>
+                        <tr>
+                            <td>1-2-3-4-5</td>
+                            <td>6666666</td>
+                            <td>3-4-5,6,7,8</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>1-2-5-19-0</td>
+                            <td>7777777</td>
+                            <td>5-19-10thru13</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>1-3-2-5-2</td>
+                            <td>8888888</td>
+                            <td>2-5-2to5</td>
+                            <td>14,16,18</td>
+                        </tr>
+                        <tr>
+                            <td>1-5-9-3-7</td>
+                            <td>9999999</td>
+                            <td>9-3-7&amp;8</td>
+                            <td>10</td>
+                        </tr>
+                    </table>
+                    <table id = 'after'>
+                        <thead>
+                        <tr>
+                        <th scope="row">Map_number</th>
+                        <th scope="row">Account_number</th>
+                        </tr>
+                        </thead>
+                            <tr>
+                                <td>1-2-3-4-5</td>
+                                <td>6666666</td>
+                            </tr>
+                            <tr>
+                                <td>1-2-3-4-6</td>
+                                <td>6666666</td>
+                            </tr>
+                            <tr>
+                                <td>1-2-3-4-7</td>
+                                <td>6666666</td>
+                            </tr>
+                            <tr>
+                                <td>1-2-3-4-8</td>
+                                <td>6666666</td>
+                            </tr>
+                            <tr>
+                                <td>1-2-5-19-0</td>
+                                <td>7777777</td>
+                            </tr>
+                            <tr>
+                                <td>1-2-5-19-10</td>
+                                <td>7777777</td>
+                            </tr>
+                            <tr>
+                                <td>1-2-5-19-11</td>
+                                <td>7777777</td>
+                            </tr>
+                            <tr>
+                                <td>1-2-5-19-12</td>
+                                <td>7777777</td>
+                            </tr>
+                            <tr>
+                                <td>1-2-5-19-13</td>
+                                <td>7777777</td>
+                            </tr>
+                            <tr>
+                                <td>1-3-2-5-2</td>
+                                <td>8888888</td>
+                            </tr>
+                            <tr>
+                                <td>1-3-2-5-3</td>
+                                <td>8888888</td>
+                            </tr>
+                            <tr>
+                                <td>1-3-2-5-4</td>
+                                <td>8888888</td>
+                            </tr>
+                            <tr>
+                                <td>1-3-2-5-5</td>
+                                <td>8888888</td>
+                            </tr>
+                            <tr>
+                                <td>1-3-2-5-14</td>
+                                <td>8888888</td>
+                            </tr>
+                            <tr>
+                                <td>1-3-2-5-16</td>
+                                <td>8888888</td>
+                            </tr>
+                            <tr>
+                                <td>1-3-2-5-18</td>
+                                <td>8888888</td>
+                            </tr>
+                            <tr>
+                                <td>1-5-9-3-7</td>
+                                <td>9999999</td>
+                            </tr>
+                            <tr>
+                                <td>1-5-9-3-8</td>
+                                <td>9999999</td>
+                            </tr>
+                            <tr>
+                                <td>1-5-9-3-10</td>
+                                <td>9999999</td>
+                            </tr>
+                    </table>
+                    <p>
+                        The above example demonstrates all the different anomalies that I encountered in the data and thus
+                        all the different cases that the program can handle.The demonstration above also shows how the 
+                        program responds in these cases. The code for this project can be found <!--link--> here on my 
+                        github account and I am always happy to <a href = "contact.html">hear comments</a> on how to improve 
+                        the code. This project has inspired me to work on a new project that will normalize a database into
+                        3rd normal form based on an input csv with the data and an input text file with the structure of
+                        the database
                     </p>
                 <h3>
                     <a id = "cs317">Zoom Zoom Cars Database<!--whats the name of this database?-->, CS 317</a>
                 </h3>
+                    <p>
+                        intro
+                    </p>
+                    <p>
+                        deliverable 1
+                    </p>
+                    <p>
+                        deliverable 2
+                    </p>
+                    <p>
+                        deliverable 3
+                    </p>
+                    <p>
+                        deliverable 4
+                    </p>
+                    <p>
+                        deliverable 4
+                    </p>
                 <h3>
                     <a id = "cs250">Mowbot, CS 250</a>
                 </h3>
