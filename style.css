@@ -95,6 +95,10 @@ em.standout {
     height: 20%;
 }
 
+div#209_hidden {
+    display: none;
+}
+
 /*
 #working {
     color: #FF0000;

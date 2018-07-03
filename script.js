@@ -1,8 +1,6 @@
-function showMore() {
-    var x = document.getElementById("209_hidden");
-    if (x.style.display === "block") {
-        x.style.display = "none";
-    } else {
-        x.style.display = "block";
-    }
-}
+var toggle  = document.getElementById("showMore");
+var content = document.getElementById("209_hidden");
+
+toggle.addEventListener("click", function() {
+  content.style.display = (content.dataset.toggled ^= 1) ? "block" : "none";
+});
