@@ -16,16 +16,30 @@ header {
     display: inline-block;
     }
 
+a {
+    text-decoration: underline dotted;
+    font-weight: bold;
+    color: #054369;
+}
+
+a:hover{
+    text-decoration: underline solid;
+    background-color: #EFECF0;
+}
+
 li a {
     display: block;
     text-align: center;
     padding: 10px 5px 10px 10px;
     text-decoration: none;
     color: #F7F3E2;
+    font-weight: normal;
 }
 
 li a:hover {
     background-color: #584848;
+    text-decoration: none;
+    font-weight: normal
 }
 
 body{

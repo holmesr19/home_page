@@ -25,8 +25,25 @@
                     <p>
                         I decided to pursue this project because I think mastering the ability to scrape data from webpages is a powerful
                         way to collect data. I chose <a href = 'http://thelatinlibrary.com/indices.html'>the Latin Library</a> because it
-                        has a huge corpus of latin texts from many different authors, spanning over a millennium. This represents a huge 
-                        
+                        has a huge corpus of latin texts from many different authors, spanning over a millennium. I wanted to assemble all 
+                        of the text from this website as a local corpus on my own computer so that I could perform text analysis on it, 
+                        however it is such a large amount of text on so many different pages that navigating to each author's page, then 
+                        to each individual work or section of a complete work seemed completely unwieldy. My answer to this is to make a 
+                        web scraper that will copy all the text and write it into text files for me.   
+                    </p>
+                    <p>
+                        I had never built a web scraper before this project so I looked around on the internet for resources to point me 
+                        in the right direction. Being most comfortable with Python, I was looking for an example in that language and found
+                        <a href = "https://www.digitalocean.com/community/tutorials/how-to-scrape-web-pages-with-beautiful-soup-and-python-3">
+                        this one</a> using <a href = "http://docs.python-requests.org/en/master/">Requests</a> by Kenneth Reitz and  
+                        <a href = "https://www.crummy.com/software/BeautifulSoup/">Beautiful Soup</a>. 
+                    </p>
+                    <p>
+                        The tutorial I found was very helpful for teaching how to apply the basics of both of those modules, however the 
+                        Latin Library is organized in a different way than the site that they scraped in the tutorial, so to access all 
+                        the text that each author wrote would require a different strategy than the one mentioned above, which is not far 
+                        removed from hard-coding the url of each of the pages to be scraped into the script. Creating a recursive algorithm
+                        fit my use case better because 
                     </p>
             <!--
                 <h3>
@@ -406,6 +423,7 @@
                         machine would map its own route. Ultimately, this would mean that the user has to program the boundaries of 
                         the yard once and then the Mowbot will do its job on its own with no further input needed from the human. 
                     </p>
+    <!--        
             <h2>
                 Origami
             </h2>
@@ -417,7 +435,7 @@
                 </h3>
                 <h3>
                     Some other shape
-                </h3>
+                </h3>-->
         </section>
         <footer class="info"> &copy; 2018, Robert E. B. Holmes</footer>
     </body>
