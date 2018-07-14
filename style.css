@@ -206,6 +206,18 @@ th, td {
     padding: 20px;
 }
 
+table.before {
+    float: left;
+}
+
+table.after{
+    float: right;
+}
+
+table.before > th, td, table.after > th, td {
+    padding: 3px;
+}
+
 label{
     width: 200px;
     display: inline-block;
