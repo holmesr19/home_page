@@ -201,7 +201,7 @@ thead{
     color: #ffffff;
 }
 
-th, td {
+table.coursework>th, td {
     border-bottom: 2px solid #ddd;
     padding: 20px;
 }
