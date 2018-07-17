@@ -201,17 +201,17 @@ thead{
     color: #ffffff;
 }
 
-table.coursework>th, td {
+th, td {
     border-bottom: 2px solid #ddd;
     padding: 20px;
 }
 
 table.before {
-    float: left;
+    margin-left: 0px;
 }
 
 table.after{
-    float: right;
+    margin-right: 0px;
 }
 
 table.before > th, td, table.after > th, td {
