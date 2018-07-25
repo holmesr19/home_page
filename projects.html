@@ -47,15 +47,49 @@
                         directory, while other authors may have one or two sub-directories before the algorithm reaches his actual text. 
                     </p>
                     <p>
-                        data collection and organization
+                        The program collects data by building a dictionary of the authors on the page. In this ditionary, appropriately named
+                        "Authors," the keys are authors' names and the values are tuples containing the extension to each author's subdirectory
+                        and the ID number for each author. Most authors have a subdirectory that allows the user to choose which work of an
+                        author to view, so these are handled in a similar way by constructing a dictionary with ID numbers and extensions for
+                        each page. One the application reaches a page that doesn' have unvisited, non-blacklisted links on it, it will store 
+                        all the text on that page as a text file in a directory on my computer. The directory in which it will be stored is 
+                        structured to mirror the structure that the website itself takes: classified primarily by authors, then by work and 
+                        sometimes by the section of a work after that. 
                     </p>
                     <p>
-                        Errors/obstacles
+                        I undertook this project to assist me in an analysis of the latin laguage using modern computational and linguistic 
+                        resources. During my research while preparing this project I found a few resources that I could use to create word 
+                        embeddings which track the meaning of words in context. Each word is represented by a multi-dimensional vector that 
+                        can then be studied in relation to the vectors of other words. The classic illustration of this concept is that the
+                        vector for queen is roughly equivalent to the vector values of king - man + woman. A couple other projects I am 
+                        looking at for guidance to this next stage include Mikolov's word2vec <!--link--> and <!--cmu latin-->. Another 
+                        interesting visualization that I am going to make once the corpora have been assembled will be a graph showing how 
+                        often authors mention one another, with the quantity of mentions represented by an edge between the two authors. 
                     </p>
                     <p>
-                        next steps
+                        Some obstacles that I have run into while developing this code are that the Latin Library does not have a uniform format
+                        throughout its HTML. For example, there is a footer with links that I did not want my program to visit. Using the 
+                        BeautifulSoup module, I could pick a single attribute of the footer, which was in a table, and decompose it on each page
+                        if it had consistent formatting throughout, but some author pages formatted the table containing the list of works the 
+                        exact same way that the footer was normally formatted, so I would have lost all these authors' works. Additionally, the
+                        table containing the footer had no formatting, classes or ID's some of the time so it was tough to single out. I circumvented
+                        this difficulty by adding the links in the footer that I didn't want to visit into a blacklist that the program is not to 
+                        visit. 
                     </p>
-
+                    <p>
+                        Another branch of this project that I am considering is adapting this algorithm so that it can run on any website given with a 
+                        CLI argument and posibly allowing the importation of a blacklist, which could be specified by a second argument of a text file 
+                        that contains the URLs or relative addresses of the pages not to be visited. Going from there, it could be interesting to run the 
+                        program on similar compilations of corpora such as the Packard Humanities Institute <!--link--> or the Perseus Library <!--link--> 
+                        and see whether there are any significant differences among these. Furthermore, since this is a tool for collecting textual data 
+                        from websites it could really be used on any sites with a similar structure, in any language.
+                    </p>
+                    <p>
+                        Currently, the code is successful in recursively visiting websites and the links contained within. I am experimenting with the 
+                        stripped_strings() method in order to write the text of bottom-level pages to files. I am considering any page that has links 
+                        only to blacklisted pages, off-site pages or other places within itself to be bottom-level pages. When representing this site as
+                        a tree, the bottom-level pages would be the leaf nodes. 
+                    </p>
             <!--
                 <h3>
                     Catullus Text Analysis
@@ -108,6 +142,13 @@
                     <a id = "rush">Politics Research</a>
                 </h3>
                     <p>
+                        Over the course of ten weeks during the summer of 2017, I was given the opportunity to carry out ppolitics
+                        research with Professor Mark Rush and two of my peers, Benjamin Decembrino and Ethan Fischer. We were
+                        investigating the characteristics of elections and voter behaviors in Virginia voting districts that are 
+                        under the jurisdiction of the Voting Rights Act and comparing those with districts not affected by the 
+                        VRA. 
+                    </p>
+                    <p>
                         data harvesting
                     </p>
                     <p>
@@ -126,7 +167,7 @@
                         The Java Freecell game was a step-by-step project completed by myself and my four team mates, 
                         Gillen Beck, Rebecca Melkerson, Liz Curtis, and Emily Boyes. We built the project in a step-wise
                         fashion, starting by building a simple war game and and devloping it into a full-fledged, GUI game
-                        of Freecell solitaire. We made extensive use of the <a href = "">Solitaire Laboratory</a> to 
+                        of Freecell solitaire. We made extensive use of the <a href = "https://http://www.solitairelaboratory.com/">Solitaire Laboratory</a> to 
                         add to our understanding of gameplay and decide how to organize the application.
                     </p>
                     <!--<button id="showMore">Show More</button>-->
@@ -148,7 +189,7 @@
                         takes information from the GUI view to update the model and vice versa. When testing end cases, we ran 
                         into a number of situations that made us look back at the rule book and then revise our model. One of 
                         the toughest end cases was when you had played yourself into a hole, meaning you had no possible moves
-                        remaining and you hadn't won. At first, the game would let you play indefinitelyin this scenario so we 
+                        remaining and you hadn't won. At first, the game would let you play indefinitely in this scenario so we 
                         had to add methods to calculate the possible number of moves that could be made with the game in its 
                         current state and notify the player if that move was 0, in which case the game was lost.
                     </p>
@@ -162,10 +203,15 @@
                         been made.
                     </p>
                     <p>
-                        swing
-                    </p>
-                    <p>
-                        mvc
+                        We used the Java Swing package in order to help us implement the  Model-View-Controller design pattern. 
+                        The cells were all represented as lists in the model and each different type of cell - home, free or 
+                        tableau - were governed by additional classes that enforced rules for the specific type of cell. We used
+                        the <!--which type?--> layout to display the panels, in each of which there was a single cell. The 
+                        controller segment of the project resides in the PanelListener classes, which listen for clicks in their 
+                        respective types of panels and attempt to change the lists in the model if it is allowed. These classes 
+                        also report back to the GUI view to repaint the updated panels so that the GUI correctly represents the
+                        model. If the attempted maneuvre is not permissible, the cotroller will report this back to the GUI which 
+                        will in turn display a pop-up the informs the user that the attempted move is illegal. 
                     </p>
                     </div>
                 <h3>
@@ -387,7 +433,7 @@
                         We encountered a few obstacles along the way, as one would expect with a project such as this.
                         First, we realized that we would need to cut weight in order to stay within a reasonable budget
                         for the class. We were originally planning to make a product very similar to 
-                        <a href = "http://www.instructables.com/id/Arduino-RC-Lawnmower/" target = "_blank">this</a>, however the weight of
+                        <a href = "http://www.instructables.com/id/Arduino-RC-Lawnmower/" target = "_blank">this one</a>, however the weight of
                         the cutting head would necessitate heavier, more expensive motors and thus heavier, more expensive 
                         batteries. We solved this problem by opting to go with a weed wacker cutting head instead of the 
                         lawnmower head. This decision paid dividends since it came with its own battery, plus it would turn 
@@ -434,19 +480,43 @@
                         machine would map its own route. Ultimately, this would mean that the user has to program the boundaries of 
                         the yard once and then the Mowbot will do its job on its own with no further input needed from the human. 
                     </p>
-    <!--        
+         
             <h2>
                 Origami
             </h2>
-                <h3>
+   <!--                <h3>
                     Dodecahedron
                 </h3>
                 <h3>
                     Polyhedron
-                </h3>
-                <h3>
-                    Some other shape
                 </h3>-->
+                <h3>
+                    Geodesic Dome
+                </h3>
+                <p>
+                    I had the intent of making a dodecahedron when I started this piece, but I misunderstood the way the instructions
+                    were organized on the site I was using, so I accidentally downloaded the instructions for the dome instead. Since 
+                    these pieces are both modular, the instructions ususally only contain the method for building one component and 
+                    then how to link a few together, with "a few" defined as just enough to make a recognizable pattern. So using <!--link-->
+                    these instructions, I began to build my dodecahedron with the 30 units mentioned on the site. 
+                </p>
+                <p>
+                    After folding and assembling around 15 units, I was still very far from a sphere and I began to question how I was 
+                    halfway through the build. At this point I revisited the website and discovered that I had in fact downloaded the 
+                    instructions for a shape called a "hackysack" and not the dodecahedron. Although I was somewhat bothered because of
+                    how finnicky the folds for this model are, I saw some patterns beginning to develop that I wanted to investigate further.
+                </p>
+                <p>
+                    The first pattern I noticed is that the shape seemed to be composed of hexagons that formed levels. For example, the
+                    top level consists of one hexagon which is situated at the "north pole" of the model. The next level down from it 
+                    consists of six hexagons, the top of each sharing one edge of the top hexagon.
+                </p>
+                <p>
+                    I have only finished the second row at the current time, however I am insterested to see how the pattern develops from 
+                    here and at what level does the number of hexagons begin to decrease again in order for the model to approach the south 
+                    pole. I have a hunch that the next row will be between an arithmetic increase and a geometric increase, tending towards
+                    arithmetic.
+                </p>
         </section>
         <footer class="info"> &copy; 2018, Robert E. B. Holmes</footer>
     </body>
