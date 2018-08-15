@@ -149,17 +149,32 @@
                         VRA. 
                     </p>
                     <p>
-                        data harvesting
+                        The first step of this project was gathering the data from the <!--link-->Virginia Historical Elections database.
+                        We were looking at voter participation and results so we had to download both turnout data and results data. The 
+                        turnout data gave us information on how many voters in each district showed up to the polls, while the results 
+                        allowed us to see how the voting patterns of those constituents changed over the course of the study, which looked
+                        at data going back to 1990. We suspected that VRA districts would have lower turnouts and less competition for 
+                        elected offices, which signals a lower quality of democracy for those constituents.
                     </p>
                     <p>
-                        visualization
+                        In order to demonstrate the concepts we were examining to one another and also those not affiliated with the project,
+                        we used ArcGIS to create geographic visualizations. We began by making maps that show which parties won elections: a 
+                        light red for a competitive election won by a Republican, light blue for a competitive election won by a Democrat and 
+                        the darker shade of each color if the election was a blowout (winning candidate garnered >60% of the vote). We also 
+                        made visuals that call out precincts which changed voting districts and consequently changed party allegiances. These 
+                        were important precincts to call attention to because both blowout elections and rapidly changing votes can be symptoms
+                        of "packing" and "cracking" which are gerrymandering techniques that dilute the influence of voters and are tacitly 
+                        encouraged by the language of the Voting Rights Act as it it written.  
                     </p>
-                    <p>
+                    <!--<p>
                         conclusions
                     </p>
+                    
                     <p>
-                        improvements
-                    </p>
+                        A map that we did not make but would be interesting to see would call out only voting precincts that switched districts 
+                        and where the concentration of black voters is greater than Virginia's statewide percentage. That map would demonstrate 
+
+                    </p>-->
                 <h3>
                     <a id = "cs209">Java Freecell Game, CS 209</a>
                 </h3>
@@ -206,7 +221,7 @@
                         We used the Java Swing package in order to help us implement the  Model-View-Controller design pattern. 
                         The cells were all represented as lists in the model and each different type of cell - home, free or 
                         tableau - were governed by additional classes that enforced rules for the specific type of cell. We used
-                        the <!--which type?--> layout to display the panels, in each of which there was a single cell. The 
+                        the gridbag<!--which type?--> layout to display the panels, in each of which there was a single cell. The 
                         controller segment of the project resides in the PanelListener classes, which listen for clicks in their 
                         respective types of panels and attempt to change the lists in the model if it is allowed. These classes 
                         also report back to the GUI view to repaint the updated panels so that the GUI correctly represents the
@@ -269,8 +284,8 @@
                         along with every parcel that account owned, in an excel spreadsheet but it was in an anomalous
                         format, as is seen below left. They needed the data in a standardized form with a single parcel 
                         number linked to an account number so that it could be joined to the parcel numbers database that
-                        already existed on their GIS.
-                    </p>
+                        already exist
+                    <section>
                     <table id = 'before'>
                         <thead>
                         <tr>
@@ -389,6 +404,7 @@
                                 <td>9999999</td>
                             </tr>
                     </table>
+                    </section>
                     <p>
                         The above example demonstrates all the different anomalies that I encountered in the data and thus
                         all the different cases that the program can handle.The demonstration above also shows how the 
@@ -399,13 +415,22 @@
                         the database
                     </p>
                 <h3>
-                    <a id = "cs317">Zoom Zoom Cars Database<!--whats the name of this database?-->, CS 317</a>
+                    <a id = "cs317">Car Rental Management System, CS 317</a>
                 </h3>
                     <p>
-                        intro
+                        Half of my Database Management class was focused on learning SQL and principles of relational databases and
+                        the other half was a project which allowed me the opportunity to develop a relational database from scratch
+                        along with teammates Kelly Amar, Will McMurtry and Alec Singer. In addition to developing the rental car 
+                        company database, we were tasked with simulating a university that had contracted a consulting firm to build 
+                        a database for us. Simulating all three positions - clients communicating with consultants, consultants 
+                        communicating with clients and database developers-gave us great experience in communicating about databases
+                        and also gave insights into some of the difficulties of communicating about a database. 
+
                     </p>
+                    <!--
                     <p>
-                        deliverable 1
+                        The first step of the assignment was to become familiar with the university management data we would be giving
+                         to the other group from which they would construct a database. 
                     </p>
                     <p>
                         deliverable 2
@@ -419,6 +444,7 @@
                     <p>
                         deliverable 4
                     </p>
+                    -->
                 <h3>
                     <a id = "cs250">Mowbot, CS 250</a>
                 </h3>
